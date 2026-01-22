@@ -1,3 +1,39 @@
+# 🚀 Techboard: React & Advanced Software Engineering
+
+![Project Status](https://img.shields.io/badge/status-active-success.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
+> **"Code that works is not enough. We write code for humans to read and machines to execute."**
+
+## 🎯 Project Goal
+
+This repository is not just another To-Do list app. It serves as a **laboratory for advanced Software Engineering concepts** applied to the modern React ecosystem. 
+
+The primary objective is to bridge the gap between "making it work" and "engineering a solution," applying solid architectural patterns often reserved for backend development to the frontend.
+
+## 🧠 Key Concepts & Patterns
+
+We are exploring how classical software design principles translate to component-based UI development:
+
+- **🏗 Builder Pattern:** Encapsulating the complex construction of dynamic forms (`SimpleFormBuilder`) to separate configuration logic from rendering logic.
+- **🧩 Composition over Inheritance:** deeply exploring how React's composition model replaces traditional OOP inheritance.
+- **⚛️ Atomic Design Principles:** Implementing a hierarchy of components (Atoms -> Molecules -> Organisms) without being constrained by rigid folder structures.
+- **📁 Fractal / Feature-Based Architecture:** Organizing the codebase by **domain features** (co-location) rather than technical roles, ensuring high cohesion and low coupling.
+- **SOLID Principles:** Applying SRP (Single Responsibility Principle) to component design.
+
+## 🛠 Tech Stack
+
+- **Core:** React 19+, TypeScript
+- **Build Tool:** Vite
+- **Styling:** CSS (Modular approach)
+- **Architecture:** Clean Code & Design Patterns
+
+---
+
+## ⚡ Getting Started (Vite Template Info)
+
+This project was initialized with Vite. Below is the standard configuration info.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
