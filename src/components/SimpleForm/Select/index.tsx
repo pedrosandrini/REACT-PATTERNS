@@ -1,14 +1,22 @@
+import "./simple-form-select.style.css"
+
 interface SelectProps {
-    name?: string;
+    id: string;
+    label: string;
     options: string[];
 }
 
-export function Select(props: SelectProps) {
+export function SelectField(props: SelectProps) {
     return (
-        <select name={props.name}>
-            {props.options.map((option) => (
-                <option key={option} value={option}>{option}</option>
-            ))}
-        </select>
+        <div className={"simple-form-select"}>
+            <label htmlFor={props.id}>
+                {props.label}
+            </label>
+            <select name={props.id} id={props.id}>
+                {props.options.map((option) => (
+                    <option key={option} value={option}>{option}</option>
+                ))}
+            </select>
+        </div>
     );
 }
