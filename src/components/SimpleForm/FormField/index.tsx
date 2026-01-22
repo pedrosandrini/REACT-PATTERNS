@@ -4,7 +4,7 @@ export interface FormFieldProps {
     id: string;
     label: string;
     fieldType: string;
-    placeholder?: string;
+    placeholder: string;
 }
 
 export function FormField(props: FormFieldProps) {
