@@ -4,6 +4,7 @@ import {FormField, type FormFieldProps} from "./FormField";
 // CSS imports
 import "./simple-form.style.css";
 import {Button} from "./ActionButton";
+import {SelectField} from "./Select";
 
 export interface SimpleFormProps {
     title: string;
@@ -23,6 +24,7 @@ export function SimpleForm(props: SimpleFormProps) {
                                {...field}
                     />
                 ))}
+                <SelectField options={["fooo", "bar", "XPTO", "XYZ"]} id={"event_theme"} label={"Tema do Evento"}/>
             </fieldset>
             <div className={"form-footer"}>
                 <Button buttonLabel={props.buttonLabel}/>
