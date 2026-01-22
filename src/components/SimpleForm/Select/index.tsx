@@ -1,9 +1,15 @@
 import "./simple-form-select.style.css"
 
-interface SelectProps {
+export interface SelectOption {
+    id: string;
+    value: string;
+}
+
+export interface SelectProps {
     id: string;
     label: string;
-    options: string[];
+    name: string;
+    values: SelectOption[];
 }
 
 export function SelectField(props: SelectProps) {
@@ -12,9 +18,9 @@ export function SelectField(props: SelectProps) {
             <label htmlFor={props.id}>
                 {props.label}
             </label>
-            <select name={props.id} id={props.id}>
-                {props.options.map((option) => (
-                    <option key={option} value={option}>{option}</option>
+            <select name={props.name} id={props.id}>
+                {props.values.map((option) => (
+                    <option key={option.id} value={option.id}>{option.value}</option>
                 ))}
             </select>
         </div>
